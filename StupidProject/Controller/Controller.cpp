@@ -21,4 +21,5 @@ void Controller :: start()
     {
         cout << "This loop has executed " << index + 1 << " times" <<endl;
     }
+    int intArray [5] = {1, 2, 3, 4, 5};
 }
