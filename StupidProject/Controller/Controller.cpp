@@ -41,5 +41,15 @@ void Controller :: start()
         cout << intArray[index] << " " << dubArray[index] << " " << stringArray[index] << " " << endl;
     }
     
+    useVector();
+}
 
+void Controller :: useVector()
+{
+    vector<int> numbers;
+    
+    numbers.push_back(specialNumber);
+    cout << "The size of my vector is: " << numbers.size() << endl;
+    numbers.pop_back();
+    cout << "The size of my vector is: " << numbers.size() << endl;
 }

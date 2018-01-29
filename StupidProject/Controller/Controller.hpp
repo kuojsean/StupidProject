@@ -10,17 +10,25 @@
 #define Controller_hpp
 
 #include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
 
 class Controller
 {
 private:
     //data members and helper methods
+    int specialNumber;
+    string favoriteWord;
+    int * numberPointer;
 protected:
     //Things that need to only be used by subclasses
 public:
     // anyone can see this
     Controller();
     void start();
+    void useVector();
     // this is a prototype
 };
 
