@@ -29,6 +29,7 @@ public:
     Controller();
     void start();
     void useVector();
+    void useStringVector();
     // this is a prototype
 };
 

@@ -42,6 +42,7 @@ void Controller :: start()
     }
     
     useVector();
+    useStringVector();
 }
 
 void Controller :: useVector()
@@ -52,4 +53,24 @@ void Controller :: useVector()
     cout << "The size of my vector is: " << numbers.size() << endl;
     numbers.pop_back();
     cout << "The size of my vector is: " << numbers.size() << endl;
+    numbers.push_back(specialNumber);
+    cout << "The size of my vector is: " << numbers.size() << endl;
+    
+    for (int index = 0; index < 2; index ++)
+    {
+        cout << numbers[index] << endl;
+    }
+}
+
+void Controller :: useStringVector()
+{
+    vector<string> word;
+    
+    word.push_back(favoriteWord);
+    
+    for (int index = 0; index < 2; index ++)
+    {
+        cout << word[index] << endl;
+    }
+
 }
